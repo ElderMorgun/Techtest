@@ -1,0 +1,21 @@
+{
+  "name": "techtest",
+  "version": "1.0.0",
+  "description": "Tech test for ContentSquare",
+  "main": "src/index.js",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0"
+  },
+  "scripts": {
+    "build": "npm i",
+    "start": "node src/index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElderMorgun/Techtest.git"
+  },
+  "author": "Vitali Morgun <eldermorgun@gmail.com>",
+  "license": "ISC"
+}
