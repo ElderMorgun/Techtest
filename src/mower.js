@@ -35,11 +35,11 @@ module.exports = class Mower {
     // If the parameter is not recognized, method prints error in the console.
     turn(side) {
         let index = DIRECTIONS.indexOf(this.coordinates.currDirection)
-        if (side === 'R') {
+        if (side === 'R' && index != -1) {
             index < DIRECTIONS.length - 1 ?
                 this.coordinates.currDirection = DIRECTIONS[index + 1] :
                 this.coordinates.currDirection = DIRECTIONS[0];
-        } else if (side === 'L') {
+        } else if (side === 'L' && index != -1) {
             index > 0 ?
                 this.coordinates.currDirection = DIRECTIONS[index - 1] :
                 this.coordinates.currDirection = DIRECTIONS[DIRECTIONS.length - 1];
