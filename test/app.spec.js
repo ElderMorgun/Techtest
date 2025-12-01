@@ -2,7 +2,7 @@ const fs = require('fs');
 const os = require('os');
 const { expect } = require('chai');
 
-const {run} = require('../src/app')
+const { run } = require('../src/app')
 
 describe('Test input values in automative lawn mower', function () {
 
@@ -29,5 +29,22 @@ describe('Test input values in automative lawn mower', function () {
             expect(secondResult).to.eq(secondExpected)
         });
     });
+});
 
+describe('Additional calculations', function () {
+    describe('Math operations block', function () {
+        it('should correctly add two numbers', function () {
+            const a = 5;
+            const b = 7;
+            const result = a + b;
+            expect(result).to.equal(12);
+        });
+
+        it('should correctly multiply values', function () {
+            const x = 4;
+            const y = 3;
+            const result = x * y;
+            expect(result).to.equal(12);
+        });
+    });
 });
